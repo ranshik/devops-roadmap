@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DevOps roadmap favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#0f172a"/>
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="url(#bg)" opacity="0.18"/>
+  <path d="M17 27.5h8.5L30 18l4.5 9.5H43v5H30l-4.5 9.5L17 32.5z" fill="url(#glow)" opacity="0.95"/>
+  <path d="M22 20h20v5H22zm0 19h20v5H22z" fill="#e2e8f0" opacity="0.9"/>
+  <circle cx="17" cy="18" r="3" fill="#f8fafc"/>
+  <circle cx="47" cy="46" r="3" fill="#f8fafc"/>
+  <circle cx="17" cy="46" r="3" fill="#f8fafc"/>
+  <circle cx="47" cy="18" r="3" fill="#f8fafc"/>
+  <path d="M17 18h30M17 46h30M17 18v28M47 18v28" stroke="#f8fafc" stroke-width="1.5" opacity="0.45"/>
+</svg>
