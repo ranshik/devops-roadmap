@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Engineer Roadmap • Beginner to Senior</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
         :root {
             --primary: #3b82f6;
@@ -128,6 +130,10 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
+        }
+
+        .nav-label {
+            display: inline;
         }
 
         .btn-primary {
@@ -823,12 +829,30 @@
         }
 
         @media (max-width: 520px) {
+            nav {
+                padding: 10px 0;
+            }
+
             .container {
                 padding: 0 14px;
             }
 
+            .nav-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+
             .logo {
                 font-size: 1.05rem;
+            }
+
+            .nav-actions {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 8px;
             }
 
             .btn,
@@ -837,8 +861,25 @@
                 justify-content: center;
             }
 
-            .nav-actions {
-                gap: 8px;
+            .nav-actions .btn {
+                padding: 8px 10px;
+                font-size: 0.7rem;
+                min-height: 38px;
+                border-radius: 7px;
+            }
+
+            .nav-actions .theme-toggle {
+                width: 100%;
+                min-height: 38px;
+                font-size: 1rem;
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .btn-primary {
+                grid-column: span 4;
             }
 
             .hero {
@@ -937,18 +978,15 @@
                 <div class="logo">DevOps Roadmap </div>
                 <div class="nav-actions">
                     <button class="btn btn-secondary" onclick="document.getElementById('roadmap').scrollIntoView({behavior: 'smooth'})">
-                        <span>📍</span> Roadmap
+                        <span>📍</span><span class="nav-label">Roadmap</span>
                     </button>
                     <button class="btn btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
-                        <span>🚀</span> Projects
+                        <span>🚀</span><span class="nav-label">Projects</span>
                     </button>
                     <button class="btn btn-secondary" onclick="document.getElementById('interview').scrollIntoView({behavior: 'smooth'})">
-                        <span>💼</span> Interview
+                        <span>💼</span><span class="nav-label">Interview</span>
                     </button>
-                    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
-                    <button class="btn btn-primary" onclick="printRoadmap()">
-                        <span>🖨️</span> Print
-                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle theme">🌙</button>
                 </div>
             </div>
         </div>
